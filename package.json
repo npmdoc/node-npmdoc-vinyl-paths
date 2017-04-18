@@ -1,1 +1,39 @@
-{     "devDependencies": {         "vinyl-paths": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-vinyl-paths",     "homepage": "https://github.com/npmdoc/node-npmdoc-vinyl-paths",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-vinyl-paths.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### api documentation for  [vinyl-paths (v2.1.0)](https://github.com/sindresorhus/vinyl-paths)  [![npm package](https://img.shields.io/npm/v/npmdoc-vinyl-paths.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-vinyl-paths) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-vinyl-paths.svg)](https://travis-ci.org/npmdoc/node-npmdoc-vinyl-paths)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha",
+        "vinyl-paths": "*"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-vinyl-paths",
+    "keywords": [
+        "documentation",
+        "vinyl-paths"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_vinyl_paths.js",
+    "name": "npmdoc-vinyl-paths",
+    "nameAlias": "npmdoc_vinyl_paths",
+    "nameOriginal": "npmdoc-vinyl-paths",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-vinyl-paths.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
