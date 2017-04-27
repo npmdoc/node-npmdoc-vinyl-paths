@@ -1,6 +1,6 @@
 # npmdoc-vinyl-paths
 
-#### api documentation for  [vinyl-paths (v2.1.0)](https://github.com/sindresorhus/vinyl-paths)  [![npm package](https://img.shields.io/npm/v/npmdoc-vinyl-paths.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-vinyl-paths) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-vinyl-paths.svg)](https://travis-ci.org/npmdoc/node-npmdoc-vinyl-paths)
+#### basic api documentation for  [vinyl-paths (v2.1.0)](https://github.com/sindresorhus/vinyl-paths)  [![npm package](https://img.shields.io/npm/v/npmdoc-vinyl-paths.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-vinyl-paths) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-vinyl-paths.svg)](https://travis-ci.org/npmdoc/node-npmdoc-vinyl-paths)
 
 #### Get the file paths in a vinyl stream
 
@@ -77,7 +77,8 @@
     "scripts": {
         "test": "xo && ava"
     },
-    "version": "2.1.0"
+    "version": "2.1.0",
+    "bin": {}
 }
 ```
 
